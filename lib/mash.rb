@@ -1,5 +1,3 @@
-require "mash/version"
-
 class Mash < Hash
   def self.new(value = nil, *args)
     if value.respond_to?(:each) &&

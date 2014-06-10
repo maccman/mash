@@ -1,11 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'mash/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "mash"
-  spec.version       = Mash::VERSION
+  spec.version       = '0.0.1'
   spec.authors       = ["Alex MacCaw"]
   spec.email         = ["info@eribium.org"]
   spec.summary       = %q{A Mash library.}
