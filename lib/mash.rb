@@ -1,4 +1,6 @@
 class Mash < Hash
+  autoload :Camel, 'mash/camel'
+
   def self.new(value = nil, *args)
     if value.respond_to?(:each) &&
       !value.respond_to?(:each_pair)
