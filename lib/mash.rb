@@ -170,7 +170,7 @@ class Mash < Hash
         val.dup
       when ::Hash
         val = val.dup if duping
-        self.class.new(val)
+        Mash.new(val)
       when ::Array
         val.map {|e| convert_value(e) }
       else
