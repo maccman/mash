@@ -1,6 +1,10 @@
 class Mash < Hash
   autoload :Camel, 'mash/camel'
 
+  def self.from_json(json)
+    self.new(JSON.parse(json))
+  end
+
   def self.new(value = nil, *args)
     if value.respond_to?(:each) &&
       !value.respond_to?(:each_pair)
